@@ -28,7 +28,10 @@ y_values = [x**2 for x in x_values]
 #plt.scatter(x_values, y_values,c='red', edgecolors='none', s=40)
 
 #6、
-plt.scatter(x_values, y_values,c=(0, 0, 0.8), edgecolors='none', s=40)
+#plt.scatter(x_values, y_values, c=(0, 0, 0.8), edgecolors='none', s=40)
+
+#7、
+plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, edgecolors='none', s=40)
 
 #设置图表标题并给坐标轴加上标签
 plt.title("Square Numbers", fontsize=24)
