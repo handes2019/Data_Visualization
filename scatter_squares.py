@@ -11,18 +11,24 @@ import matplotlib.pyplot as plt
 # y_values=[1, 4, 9, 16, 25]
 # plt.scatter(x_values, y_values, s=100)
 
+x_values = list(range(1, 1001))
+y_values = [x**2 for x in x_values]
 #4、
 
-# x_values = list(range(1, 1001))
-# y_values = [x**2 for x in x_values]
+
 
 # plt.scatter(x_values, y_values, s=40)
 
 #4、
 
-x_values = list(range(1, 1001))
-y_values = [x**2 for x in x_values]
-plt.scatter(x_values, y_values, edgecolors='none', s=40)
+
+#plt.scatter(x_values, y_values, edgecolors='none', s=40)
+
+#5、
+#plt.scatter(x_values, y_values,c=(0, 0, 0.8), edgecolors='none', s=40)
+
+#6、
+plt.scatter(x_values, y_values,c='red', edgecolors='none', s=40)
 
 #设置图表标题并给坐标轴加上标签
 plt.title("Square Numbers", fontsize=24)
