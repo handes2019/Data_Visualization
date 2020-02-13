@@ -30,8 +30,8 @@ class RandomWalk():
                 continue
 
             #计算下一个点的x和y值
-            next_x = self.x_values[-1] = x_step
-            next_y = self.y_values[-1] = y_step
+            next_x = self.x_values[-1] + x_step
+            next_y = self.y_values[-1] + y_step
 
             self.x_values.append(next_x)
             self.y_values.append(next_y)
